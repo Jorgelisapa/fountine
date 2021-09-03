@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fountine {
+  position: relative;
+  border: 5px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-block-start: 100px;
+  width: 310px;
+  height: 330px;
+  background-image: url(img/sky.jpg);
+  background-repeat: no-repeat;
+  background-size: 101%;
+  overflow: hidden;
+  z-index: 1;
+}
+.wall {
+  margin: auto;
+  min-width: 338px;
+  z-index: 2;
+}
+.grasses {
+  position: absolute;
+  margin: auto;
+  width: 320px;
+  z-index: 110;
+  inset-block-end: -10px;
+}
+.grasses img {
+  position: absolute;
+  width: 320px;
+  inset-block-end: 0;
+}
+
+.mouthpiece {
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  background: black;
+  border-radius: 2px;
+  inset-inline-start: calc(49.3% - 0px);
+  inset-block-end: 125px;
+  z-index: 3;
+}
+.mouthpiece2 {
+  inset-inline-start: calc(74.2% - 0px);
+}
+
+.cleft {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  background: gray;
+  border-radius: 0 0 2px 2px;
+  inset-inline-start: calc(10%);
+}
+/* WATERFALL */
+.waterfall {
+  position: absolute;
+  width: 30px;
+  height: 135px;
+  background: #3586ff;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+  inset-inline-start: calc(49.3%);
+  inset-block-end: 0;
+  z-index: 5;
+}
+.waterfall:hover {
+  display: none;
+}
+.waterfall2 {
+  inset-inline-start: calc(74.2%);
+}
+.waterfall2:hover {
+  display: none;
+}
+.fall {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  width: inherit;
+  height: inherit;
+  background: url(img/fall.png);
+  background-size: 30px 135px;
+}
+.fall:hover {
+  display: none;
+}
+
+.fall.fall-1 {
+  animation: fall 1s linear infinite;
+  z-index: 997;
+  opacity: 0.8;
+  animation-delay: 0s;
+  inset-block-end: 0px;
+}
+.fall.fall-2 {
+  animation: fall 2s linear infinite;
+  z-index: 998;
+  opacity: 0.6;
+  animation-delay: -2s;
+  inset-block-end: 0px;
+}
+.fall.fall-3 {
+  animation: fall 3s linear infinite;
+  z-index: 999;
+  opacity: 0.4;
+  animation-delay: -4s;
+  inset-block-end: 0px;
+}
+.fall.fall-4 {
+  animation: fall 4s linear infinite;
+  z-index: 1000;
+  opacity: 0.2;
+  animation-delay: -6s;
+  inset-block-end: 0px;
+}
+@keyframes fall {
+  0% {
+    background-position-y: 100px;
+  }
+  100% {
+    background-position-y: 1000px;
+  }
+}
+/* WATER-WELL */
+.water-well {
+  position: absolute;
+  width: 100%;
+  height: 55px;
+  background: #0f7be5;
+  overflow: hidden;
+  z-index: 100;
+  inset-block-end: 0;
+}
+
+.wave {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  width: inherit;
+  height: 50px;
+  background: url(/img/wave.png);
+  background-size: 1000px 50px;
+}
+.wave.wave-1 {
+  animation: wave 2s linear infinite;
+  z-index: 997;
+  opacity: 0.1;
+  animation-delay: 0s;
+  inset-block-end: 0px;
+}
+.wave.wave-2 {
+  animation: wave 4s linear infinite;
+  z-index: 998;
+  opacity: 0.3;
+  animation-delay: -2s;
+  inset-block-end: 0px;
+}
+.wave.wave-3 {
+  animation: wave 6s linear infinite;
+  z-index: 999;
+  opacity: 0.2;
+  animation-delay: -4s;
+  inset-block-end: 0px;
+}
+.wave.wave-4 {
+  animation: wave 8s linear infinite;
+  z-index: 1000;
+  opacity: 0.1;
+  animation-delay: -6s;
+  inset-block-end: 0px;
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 100px;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+.autor {
+  text-align: center;
+  font-weight: 600;
+  color: rgb(33, 33, 33);
+  padding-block: 10px;
+}
